@@ -1,14 +1,14 @@
 // ВСТАВЬ СЮДА СВОЙ ТОКЕН И CHAT_ID
-const TELEGRAM_BOT_TOKEN = "<ВАШ_TELEGRAM_BOT_TOKEN>";
-const TELEGRAM_CHAT_ID = "<ВАШ_CHAT_ID>";
+const TELEGRAM_BOT_TOKEN = "8587706427:AAG6y3rUQqCWGLL59y2x68Gb0Ex_IPx4AWg";
+const TELEGRAM_CHAT_ID = "2114967558";
 
 function sendTelegramMessage(text) {
   // Если токен/чат не указаны, просто ничего не делаем
   if (
     !TELEGRAM_BOT_TOKEN ||
-    TELEGRAM_BOT_TOKEN === "8587706427:AAG6y3rUQqCWGLL59y2x68Gb0Ex_IPx4AWg" ||
+    TELEGRAM_BOT_TOKEN === "<ВАШ_TELEGRAM_BOT_TOKEN>"  ||
     !TELEGRAM_CHAT_ID ||
-    TELEGRAM_CHAT_ID === "2114967558"
+    TELEGRAM_CHAT_ID === "<ВАШ_CHAT_ID>"
   ) {
     console.warn("Укажи TELEGRAM_BOT_TOKEN и TELEGRAM_CHAT_ID в script.js");
     return Promise.resolve();
@@ -66,3 +66,4 @@ if (moveRandom) {
     moveRandomEl(e.target);
   });
 }
+
